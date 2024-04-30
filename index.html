@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Alunos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js"></script>
+   <script src="https://kit.fontawesome.com/3a136bbce7.js" crossorigin="anonymous"></script> 
+   
+</head>
+
+<body>
+    <section>
+        <h1>Cadastro de Alunos</h1>
+        <p>Clique em "Adicionar" para preencher o formulário de cadastro.</p>
+        <button onclick="adicionar()">Adicionar</button>
+        <div class="container-tabela">
+            <table id="table-customers">
+                <thead>
+                    <tr>
+                        <th>RA</th>
+                        <th>Nome</th>
+                        <th>Cidade</th>
+                        <th>Estado</th>
+                        <th>Curso</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <div id="container-modal">
+                <form id="form-modal" onsubmit="return false">
+                    <div class="form-group">
+                        <label></label>
+                        <input type="text" class="input" placeholder="Ra"  maxlength="5" name="RA" id="ra">
+                    </div>
+                    <div class="form-group">
+                        <label></label>
+                        <input type="text" class="input" name="nome"  maxlength="40" placeholder="Nome" id="nome">
+                    </div>
+                    <div class="form-group">
+                        <label></label>
+                        <input type="text" class="input" name="nome"placeholder="Cidade" maxlength="15" id="cidade">
+                    </div>
+                    <div class="form-group">
+                        <label></label>
+                        <input type="text" class="input" name="nome" placeholder="Estado"  maxlength="2" id="estado">
+                    </div>
+                    <div class="form-group">
+                        <label></label>
+                        <input type="text" class="input" name="nome"  maxlength="20" placeholder="Curso" id="curso">
+                    </div>
+                    <div class="form-group">
+                        <button onclick="salvar()" id="left-button">Salvar</button>
+                        <button onclick="cancelar()">Cancelar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

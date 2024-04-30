@@ -1,0 +1,119 @@
+ @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap"); 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url(fundo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+}
+#container-modal{
+    position: absolute;
+    display: none;
+    background-color: rgb(78, 78, 78) ;
+    width: 80%;
+    top: 40%;
+    left: 10%;
+    border-radius: 10px;
+}
+tr{
+    gap: 50px;
+}
+section{
+    margin: 0 auto;
+    background-color: rgba(240, 248, 255, 0.751);
+    width: 80%;
+    height: 90%;
+    border-radius: 5%;
+    padding: 80px;
+    position: relative;
+    padding: 5px;
+    
+
+}
+section h1{
+    text-align: center;
+    font-size: 30px;
+    color: #417477;
+}
+section p{
+    text-align: center;
+    margin: 20px 0;
+}
+.form-group{
+    position: relative;
+    margin: 20px 0;
+    
+}
+.form-group label{
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    transition: all 0.2s;
+    color: black;
+}
+#form-modal{
+    width: 80%;
+}
+.input{
+    background-color:rgb(78, 78, 78) ;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #ccc; 
+    border-bottom-width: 80%;
+    padding: 5px;
+    font-size: 17px;
+    outline: 0;
+    color: #fff;
+    margin-left: 15px;
+}
+button{
+    background-color: #417477;
+    color: #fff;
+    border-radius: 5px;
+    width: 80px;
+    height: 30px;
+   
+}
+button:hover{
+    background-color: rgba(254, 254, 254, 0.977) ;
+    color: #417477;
+}
+input::placeholder {
+    color: rgba(241, 244, 247, 0.864);
+  }
+#left-button{
+    margin-left: 15%;
+}
+.form-group button:hover{
+    background-color: rgb(78, 78, 78) ;
+    color: #ffffff;
+
+}
+
+#table-customers{
+    margin-top: 3%;
+    width: 900px;
+}
+.container-tabela{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+}
+
+td{
+    text-align: center;
+    vertical-align: middle;
+}
